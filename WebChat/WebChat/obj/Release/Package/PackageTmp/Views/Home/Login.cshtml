@@ -1,0 +1,40 @@
+﻿@model WebChat.Models.Users
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<div class="dataEye">
+    <div class="loginbox registbox">
+        <div class="logo-a">
+            <a>
+                <img src="~/Content/img/logo.png" />
+            </a>
+        </div>
+        <div class="login-content reg-content">
+            <div class="loginbox-title">
+                <h3>登录</h3>
+            </div>
+            <input type="hidden" id="logininfo" value="@Model.LoginInfo">
+            <form id="signupForm" action="/Home/Login" method="post">
+                <div class="login-error"></div>
+                <div class="row">
+                    <input type="text" value="" class="input-text-password noPic input-click" name="Username" id="Username"  placeholder="用户名"/>
+                </div>
+                <div class="row">
+                    <input type="password" value="" class="input-text-password noPic input-click" name="Password" id="Password" placeholder="密码"/>
+                </div>
+                <div class="row btnArea">
+                    <button class="login-btn" id="submit">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var info = $("#logininfo").val();
+        if (info != "" && info != "") {
+            alert(info);
+        }
+    });
+</script>

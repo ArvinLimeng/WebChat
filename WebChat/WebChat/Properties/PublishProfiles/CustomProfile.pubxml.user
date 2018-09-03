@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\WebSite\WebChat</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>08/08/2018 20:37:44</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>08/08/2018 20:37:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/27/2017 12:59:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>02/22/2018 16:25:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>02/22/2018 16:36:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>02/22/2018 14:39:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>02/22/2018 16:35:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>02/22/2018 16:36:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>02/22/2018 14:36:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>06/26/2018 02:03:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>06/26/2018 02:03:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>06/28/2017 15:05:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/13/2014 16:11:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>01/13/2014 16:11:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>01/13/2014 16:11:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>07/19/2017 10:01:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/01/2018 12:16:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/01/2018 12:16:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/WebChat.dll">
+      <publishTime>08/31/2018 16:41:17</publishTime>
+    </File>
+    <File Include="bin/WebChat.pdb">
+      <publishTime>08/31/2018 16:41:17</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>02/01/2018 12:21:00</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>02/01/2018 12:16:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:40</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>02/01/2018 12:17:00</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>02/01/2018 12:21:00</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>02/01/2018 12:21:00</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>02/01/2018 12:21:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Content/img/banner.jpg">
+      <publishTime>08/31/2018 14:12:20</publishTime>
+    </File>
+    <File Include="Content/img/bgchat.jpg">
+      <publishTime>08/31/2018 11:11:07</publishTime>
+    </File>
+    <File Include="Content/img/bgchat1.jpg">
+      <publishTime>08/31/2018 11:17:29</publishTime>
+    </File>
+    <File Include="Content/img/defaultpic.jpg">
+      <publishTime>08/31/2018 10:40:38</publishTime>
+    </File>
+    <File Include="Content/img/logo.png">
+      <publishTime>08/08/2018 21:39:04</publishTime>
+    </File>
+    <File Include="Content/img/search.png">
+      <publishTime>08/31/2018 10:53:03</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/08/2018 20:37:30</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>08/08/2018 21:55:00</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/31/2018 08:48:47</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/08/2018 20:37:30</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>08/08/2018 20:37:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>08/08/2018 20:37:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>08/08/2018 20:37:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>08/08/2018 20:37:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>08/08/2018 20:37:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>08/08/2018 20:37:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>08/08/2018 20:37:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.3.0.js">
+      <publishTime>08/08/2018 20:58:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.3.0.min.js">
+      <publishTime>08/08/2018 20:58:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/08/2018 20:37:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/08/2018 20:37:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/08/2018 20:37:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/08/2018 20:37:42</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/layim.css">
+      <publishTime>08/31/2018 09:51:25</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/layui.css">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/layui.mobile.css">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/code.css">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/laydate/default/laydate.css">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/layer/default/icon-ext.png">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/layer/default/icon.png">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/layer/default/layer.css">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/layer/default/loading-0.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/layer/default/loading-1.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/css/modules/layer/default/loading-2.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/font/iconfont.eot">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/font/iconfont.svg">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/font/iconfont.ttf">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/font/iconfont.woff">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/0.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/1.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/10.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/11.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/12.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/13.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/14.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/15.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/16.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/17.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/18.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/19.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/2.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/20.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/21.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/22.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/23.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/24.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/25.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/26.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/27.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/28.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/29.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/3.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/30.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/31.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/32.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/33.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/34.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/35.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/36.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/37.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/38.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/39.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/4.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/40.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/41.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/42.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/43.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/44.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/45.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/46.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/47.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/48.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/49.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/5.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/50.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/51.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/52.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/53.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/54.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/55.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/56.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/57.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/58.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/59.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/6.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/60.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/61.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/62.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/63.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/64.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/65.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/66.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/67.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/68.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/69.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/7.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/70.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/71.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/8.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/images/face/9.gif">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/carousel.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/code.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/element.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/flow.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/form.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/jquery.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/laydate.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/layedit.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/layer.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/laypage.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/laytpl.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/mobile.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/rate.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/table.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/tree.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/upload.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/lay/modules/util.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/layui.all.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/layui/layui.js">
+      <publishTime>08/08/2018 20:54:14</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>08/08/2018 20:37:40</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>08/08/2018 20:44:32</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>08/31/2018 17:20:09</publishTime>
+    </File>
+    <File Include="Views/Home/Login.cshtml">
+      <publishTime>08/31/2018 09:41:32</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/08/2018 20:37:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/31/2018 11:06:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutLogin.cshtml">
+      <publishTime>08/31/2018 09:25:48</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>08/31/2018 11:47:57</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/08/2018 20:37:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/31/2018 16:41:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

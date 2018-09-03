@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat聊天程序</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .footer {
+            position: absolute; /*相对于父元素contanier定位*/
+            width: 100%;
+            bottom: 0; /*始终距离它的父元素的底部为0px.则是处于父元素的最底*/
+            text-align:center
+        }
+    </style>
+</head>
+<body style="height:100%">
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    
+    <footer class="footer">
+        <hr />
+        <p>&copy; @DateTime.Now.Year - WebChat</p>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

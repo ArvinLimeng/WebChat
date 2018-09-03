@@ -1,0 +1,230 @@
+﻿@{
+    ViewBag.Title = "WebChat";
+    string Name = ViewBag.Name;
+}
+<style>
+    body {
+        /*background-color: #858F98;*/
+        background: url(../Content/img/banner.jpg) no-repeat;
+    }
+
+    .chat_div {
+        width: 800px;
+        height: 700px;
+        background-color: #FBFBFB;
+        left: 27%;
+        bottom: 100px;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .layui-form-label {
+        width: auto;
+    }
+
+    .layui-row:hover {
+        cursor: pointer;
+        background-color: #F3F3F3;
+    }
+
+    .lm-textarea {
+        height: 75px;
+        width: 500px;
+        max-width: 500px;
+        background-color: #FBFBFB;
+        border: 0px;
+    }
+
+    .layim-chat-list {
+        margin-top: 79px;
+        height: 720px;
+    }
+
+    .search {
+        width: 170px;
+        height: 25px;
+        background-color: #CEC9C9;
+        background: url(../Content/img/search.png) no-repeat;
+        text-indent: 22px;
+    }
+    /*.search::-webkit-input-placeholder {
+        padding-left: 22px;
+    }*/
+</style>
+<link href="~/Scripts/layui/css/layui.css" rel="stylesheet" />
+<link href="~/Scripts/layui/css/layim.css" rel="stylesheet" />
+<script src="~/Scripts/layui/layui.js"></script>
+<div class="chat_div">
+    <div class="layui-layer-page layui-box layui-layim-chat" id="layui-layer3" type="page" times="3" showtime="0" contype="string" style="z-index: 19891017; width: 800px; bottom: 0px; right: 0px; position:absolute ;">
+        <div class="layui-layer-title"></div>
+        <div id="layui-layim-chat" class="layui-layer-content">
+            <ul class="layui-unselect layim-chat-list" style="height: 717px; display: block;">
+                <li class="layim-friend layim-chatlist-friend">
+                    <img src="../Content/img/defaultpic.jpg"><span style="font-size:20px" id="name">@Name</span>
+            </li>
+            <li>
+                <input type="text" class="search" placeholder="搜索">
+            </li>
+            <li class="layim-friend layim-chatlist-friend1" style="border-bottom:inset;border-bottom-width:1px;border-bottom-color:#A7A7A7" onclick="tabChat('1')">  <img src="../Content/img/defaultpic.jpg"><span>李猛</span> </li>
+            <li class="layim-friend layim-chatlist-friend2" style="border-bottom:inset;border-bottom-width:1px;border-bottom-color:#A7A7A7" onclick="tabChat('2')">  <img src="../Content/img/defaultpic.jpg"><span>李颖</span> </li>
+            <li class="layim-friend layim-chatlist-friend3" style="border-bottom:inset;border-bottom-width:1px;border-bottom-color:#A7A7A7" onclick="tabChat('3')">  <img src="../Content/img/defaultpic.jpg"><span>杨情</span></li>
+            </ul>
+            <div class="layim-chat-box" style="margin-left: 200px;">
+                <div class="layim-chat layim-chat-friend layui-show">
+                    <div class="layui-unselect layim-chat-title">
+                        <div class="layim-chat-other">
+
+                        </div>
+                    </div>
+                    <div class="layim-chat-main" style="height: 430px;background-image: url(../Content/img/bgchat1.jpg);">
+                        <form>
+                            <ul id="chatarea"></ul>
+                            <div id="msg_end" style="height:60px; overflow:hidden"></div>
+                        </form>
+                    </div>
+
+                    <div class="layim-chat-footer">
+                        <div class="layui-unselect layim-chat-tool" data-json="%7B%22username%22%3A%22%E5%88%98%E6%B6%9Btamia%22%2C%22id%22%3A%22100001222%22%2C%22sign%22%3A%22%E5%A6%82%E7%BA%A6%E8%80%8C%E8%87%B3%EF%BC%8C%E4%B8%8D%E8%B4%9F%E5%A7%8A%E5%A6%B9%E6%AC%A2%E4%B9%90%E9%A2%82%22%2C%22avatar%22%3A%22%2F%2Ftva4.sinaimg.cn%2Fcrop.0.1.1125.1125.180%2F475bb144jw8f9nwebnuhkj20v90vbwh9.jpg%22%2C%22name%22%3A%22%E5%88%98%E6%B6%9Btamia%22%2C%22type%22%3A%22friend%22%7D">
+                            <span class="layui-icon layim-tool-face" title="选择表情" layim-event="face">
+                            </span>
+                            <span class="layui-icon layim-tool-image" title="上传图片" layim-event="image">
+                                <input type="file" name="file">
+                            </span><span class="layui-icon layim-tool-image" title="发送文件" layim-event="image" data-type="file">
+                                
+                                <input type="file" name="file">
+                            </span><span class="layui-icon layim-tool-audio" title="发送网络音频" layim-event="media" data-type="audio">
+                                
+                            </span><span class="layui-icon layim-tool-video" title="发送网络视频" layim-event="media" data-type="video">
+                                
+                            </span>
+                            <span class="layui-icon layim-tool-code" title="代码" layim-event="extend" lay-filter="code"></span>
+                            <span class="layim-tool-log" layim-event="chatLog"><i class="layui-icon"></i>聊天记录</span>
+                        </div>
+                        <div class="layim-chat-textarea">
+                            <textarea id="txt_message" class="layui-textarea" style="max-width:100%"></textarea>
+                        </div><div class="layim-chat-bottom">
+                            <div class="layim-chat-send">
+                                <span class="layim-send-btn" id="setSend" layim-event="send">发送</span>
+                                @*<span class="layim-send-set" layim-event="setSend" lay-type="show">
+                                    <em class="layui-edge"></em>
+                                </span>*@
+                                <ul class="layui-anim layim-menu-box">
+                                    <li class="layim-this" lay-type="Enter">
+                                        <i class="layui-icon"></i>按Enter键发送消息
+                                    </li>
+                                    <li layim-event="setSend" lay-type="Ctrl+Enter">
+                                        <i class="layui-icon"></i>按Ctrl+Enter键发送消息
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="layui-layer-resize"></span>
+    </div>
+</div>
+
+@*<div class="container">
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion"></ul>
+    </div>*@
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        $(function () {
+            var datetime = getNowFormatDate();
+            var chat = $.connection.chatHub;
+            chat.client.broadcastMessage = function (name, message, datetime, receiver) {  //发送人姓名  发送消息内容  发送时间  接收人姓名
+                var sendname = name;
+                var encodedMsg = message;
+                var currentname = $("#name").text();//  当前登录系统的用户
+                if (receiver == currentname) {   //接收人收到的消息
+                    $('#chatarea').append('<li><div class="layim-chat-user"><img src="../Content/img/defaultpic.jpg"><cite>' + sendname + '<i>' + datetime + '</i></cite></div><div class="layim-chat-text">' + encodedMsg + '</div></li>');
+                }
+                else if (sendname == currentname) {
+                    $('#chatarea').append('<li class="layim-chat-mine"><div class="layim-chat-user"><img src="../Content/img/defaultpic.jpg" /><cite><i>' + datetime + '</i>' + sendname + '</cite></div> <div class="layim-chat-text">' + encodedMsg + '</div> </li >');
+                }
+                // layui.form.render();
+            };
+            $.connection.hub.start().done(function () {
+                $(document).keypress(function (e) {
+                    if (e.keyCode == 13) {
+                        $('#setSend').click();
+                    }
+                })
+                $('#setSend').click(function () {
+                    var current_id = $("#current_id").val();
+                    if (current_id == "" || current_id == null) {
+                        alert("请先选择聊天对象");
+                        return false;
+                    }
+                    if ($("#txt_message").val() == "" || $("#txt_message").val() == null) {
+                        alert("请输入聊天内容");
+                    }
+                    else {
+                        chat.server.send($("#name").text(), $("#txt_message").val(), getNowFormatDate(), $("#current_id").val());   //发送人姓名  发送消息内容  发送时间  接收人姓名
+                        setTimeout("$(\"#txt_message\").val('')", 0005);  //清空消息输入框
+                        //$("#chatarea").children("div:last-child")[0].scrollIntoView(false);
+                        document.getElementById("msg_end").scrollIntoView(true);
+                    }
+
+                });
+            });
+        });
+        function htmlEncode(value) {
+            var encodedValue = $('<div />').text(value).html();
+            return encodedValue;
+        }
+
+        function tabChat(id) {
+            $("#chatarea").empty();
+            $(".layim-chat-other").empty("");
+            if (id == "1") {
+
+                $(".layim-chat-other").append("<img class=\"layim - friend100001222\" src=\"../Content/img/defaultpic.jpg\"><span class=\"layim-chat-username\" layim-event=\"\" >李猛</span ><p class=\"layim-chat-status\"> <input type=\"hidden\" id=\"current_id\" value='李猛'></p>");
+            }
+            else if (id == "2") {
+                $(".layim-chat-other").append("<img class=\"layim - friend100001222\" src=\"../Content/img/defaultpic.jpg\"><span class=\"layim-chat-username\" layim-event=\"\" >李颖</span ><p class=\"layim-chat-status\"> <input type=\"hidden\" id=\"current_id\" value='李颖'></p>");
+            }
+            else {
+                $(".layim-chat-other").append("<img class=\"layim - friend100001222\" src=\"../Content/img/defaultpic.jpg\"><span class=\"layim-chat-username\" layim-event=\"\" >杨情</span ><p class=\"layim-chat-status\"> <input type=\"hidden\" id=\"current_id\" value='杨情'></p>");
+            }
+
+            //form.render();  //动态取到select值之后 需要重新初始化一下表单，数据才能正常显示
+        }
+        function getNowFormatDate() {
+            var date = new Date();
+            var seperator1 = "-";
+            var seperator2 = ":";
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                + " " + date.getHours() + seperator2 + date.getMinutes()
+                + seperator2 + date.getSeconds();
+            return currentdate;
+        }
+        $(document).ready(function () {
+            var currentname = $("#name").text();//  当前登录系统的用户
+            if (currentname == "李猛") {
+                $(".layim-chatlist-friend1").remove();
+            }
+            else if (currentname == "李颖") {
+                $(".layim-chatlist-friend2").remove();
+            }
+            else if (currentname == "杨情") {
+                $(".layim-chatlist-friend3").remove();
+            }
+        })
+    </script>
+}
