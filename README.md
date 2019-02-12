@@ -4,5 +4,4 @@
 <br>这是用户的聊天窗口，发送消息的时候需要先选择一个人
 <br><img src='https://github.com/ArvinLimeng/WebChat/blob/master/WebChat/WebChat/images/%E8%81%8A%E5%A4%A9%E7%AA%97%E5%8F%A3.png' width="500px" height="400px">
 <br>可以在浏览器打开两个网页，登录两个账号，然后在一个网页中选择一个用户给这个用户发消息，在另一个网页的用户就可以收到这条消息了。
-<br><img src='https://github.com/ArvinLimeng/WebChat/blob/master/WebChat/WebChat/images/%E8%81%8A%E5%A4%A9%E7%AA%97%E5%8F%A31.png' width="600px"
-height="500px">
+<br><img src='https://github.com/ArvinLimeng/WebChat/blob/master/WebChat/WebChat/images/%E8%81%8A%E5%A4%A9%E7%AA%97%E5%8F%A31.png' height="500px">
